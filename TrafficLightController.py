@@ -107,10 +107,14 @@ class TrafficLightController(TrafficLight):
         '''Verifying if the specified state exists and change attributes of the TrafficLight accordingly'''
         
         if value in self.states.keys():
+            # Obtain colors from the public attribute states (dictionary)
             self.TF1.change_light(self.states[value][0])
             self.TF2.change_light(self.states[value][1])
             self.TF3.change_light(self.states[value][2])
             self.TF4.change_light(self.states[value][3])
+            # Updating color in the GUI
+            self.change_color()
+            # Obtain waiting time from the public attribute states (dictionary)
             sleep(self.states[value][4])
         else:
             logging.error("Invalid state")
@@ -119,17 +123,11 @@ class TrafficLightController(TrafficLight):
         '''Default sequence'''
         
         self.state("S1")
-        self.change_color()
         self.state("S2")
-        self.change_color()
         self.state("SM")
-        self.change_color()
         self.state("S3")
-        self.change_color()
         self.state("S4")
-        self.change_color()
         self.state("SM")
-        self.change_color()       
         
     def terminate(self):
         '''Closes the application's automatically'''
