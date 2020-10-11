@@ -1,3 +1,7 @@
+# Designed by: JL
+# Date:        10/03/2020
+# Modified:    10/10/2020
+
 # Required libraries and modules
 from time import sleep
 import logging
