@@ -31,7 +31,5 @@ It contains two classes:
 |:-------------------------|:-------------------------------------------------------------------------------------------------------------|
 |TrafficLight()            |Contains basic functionality for the traffic lights                                                           |
 |TrafficLightController()  |Determines the characteristics of the controller, such as number of traffic lights, state information, and GUI|
-1. TrafficLight() -> This class 
-2. TrafficLightController() -> This class determines the characteristics of the controller as well as its GUI
 
 <img src="GUI_Traffic_Light_Controller.JPG" width=480>
