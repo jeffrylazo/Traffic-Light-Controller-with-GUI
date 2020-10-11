@@ -53,7 +53,7 @@ class TrafficLightController(TrafficLight):
     def __init__(self):
         '''Constructor'''
         
-        # Traffic Lights
+        # Intialization of attributes as objects of the TrafficLight class
         self.TF1 = TrafficLight()
         self.TF2 = TrafficLight()
         self.TF3 = TrafficLight()
@@ -64,12 +64,13 @@ class TrafficLightController(TrafficLight):
                        "S4":["red","yellow","red","yellow",6],
                        "SM":["red","red","red","red",3]}
         
-        # Creating and initializating GUI's window
+        # Creation and initialization of the GUI's window
         self._controller_display = Tk()
         self._controller_display.title("Controller Display")
         self._controller_display.geometry("600x350")
         self._display = Canvas(self._controller_display,width=800, height=800)
-        # Generating Lights of Traffic Lights
+        
+        # Generation of lights for traffic lights as private attributes
         self._TF1_LR = self._display.create_oval(20,20,100,100,outline='black')
         self._TF1_LY = self._display.create_oval(20,120,100,200,outline='black')
         self._TF1_LG = self._display.create_oval(20,220,100,300,outline='black')
