@@ -20,3 +20,5 @@ Generate a traffic light controller capable of organizing 4 traffic lights. You 
 
 ## Sample solution:
 Two classes have been implemented.
+
+<img src="images/GUI_Traffic_Light_Controller.jpg">
