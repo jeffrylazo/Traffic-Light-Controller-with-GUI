@@ -15,7 +15,7 @@ Generate a traffic light controller capable of organizing 4 traffic lights. You 
 |3 |Resistors, LEDs, Raspberry Pi, Jumper Cables |Python and ROS |Design program and implement circuit on breadboard and connect it to the Raspberry Pi|
 |4 |None                                         |Python and ROS |Log data on the terminal (Keep it simple)                                            |
 
-## Time:
+## Expected Time:
 3 weeks
 
 ## Sample solution:
